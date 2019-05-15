@@ -19,7 +19,15 @@ def assign_rooms(speakers)
 end
 
 def printer(names)
-  puts batch_badge_creator(names)
-  puts assign_rooms(names)
+  
+  batchArr = batch_badge_creator(names)
+  assignArr = assign_rooms(names)
+  
+  batchArr.each_with_index do |name, index|
+    puts batchArr[index]
+  end
 
+  assignArr.each_with_index do |name, index|
+    puts assignArr[index]
+  end
 end
