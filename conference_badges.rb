@@ -17,4 +17,3 @@ def assign_rooms(speakers)
   end
   assignArr
 end
-
